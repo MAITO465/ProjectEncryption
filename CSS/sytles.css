@@ -5,11 +5,13 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Inter", serif;
+
 }
 
 body {
     height: 100vh;
     width: 100vw;
+    overflow-x: hidden;
 }
 
 .header {
@@ -33,4 +35,161 @@ body {
     font-weight: 250;
 }
 
+.introduction, .blog {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: 100%;
+    align-items: center;
+    padding: 45px 0;
+}
+
+.introText, .blogText {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin: 0 0 60px 0;
+}
+
+#introH1, #blogH1 {
+    font-size: 32px;
+    font-weight: 500;
+    padding: 20px 0;
+}
+
+#introP, #blogP {
+    font-size: 28px;
+    font-weight: 200;
+}
+
+#tryToolsBtn, #learnMoreBtn {
+    border: none;
+    height: 60px;
+    width: 270px;
+    background-color: red;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out;
+}
+
+.tools {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    background-color: #D8D8D8;
+    justify-content: center;
+    gap: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: red;
+}
+
+.machine {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: 40vw;
+    margin: 10px 0;
+    align-items: center;
+    padding: 10px;
+}
+
+.components {
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+}
+
+.titleMachine {
+    margin: 10px;
+    font-size: 3vw;
+    font-weight: 450;
+    text-align: center;
+}
+
+.components p {
+    font-size: 1.25vw;
+    font-weight: 300;
+}
+
+textarea {
+    resize: none;
+    background-color: #D8D8D8;
+    border: none;
+}
+
+.inputCase, .outputCase {
+    height: 100px;
+}
+
+.machineBtn {
+    height: 50px;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.machineBtn:hover, #tryToolsBtn:hover, #learnMoreBtn:hover {
+    background-color: rgb(164, 0, 0);
+}
+
+.machineBtn:active, #tryToolsBtn:active, #learnMoreBtn:active {
+    background-color: rgb(255, 94, 94);
+}
+
+.footer {
+    background-color: #D8D8D8;
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    width: 100%;
+}
+
+.footerTitle, .contactInformation {
+    display: flex;
+    height: 100%;
+    width: 50%;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.footerTitle {
+    color: red;
+}
+
+.contactInformation {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    align-items: end;
+    justify-content: center;   
+}
+
+.footer h1 {
+    font-size: 3vw;
+}
+
+.footer p {
+    font-size: 1vw;
+}
+
+@media screen and (max-width: 585px){
+    .titleMachine {
+        font-size: 5vw;
+    }
+
+    .components p {
+        font-size: 2.5vw;
+    }
     
+}

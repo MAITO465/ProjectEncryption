@@ -6,73 +6,73 @@
         <title>Document</title>
         <link rel="stylesheet" href="../CSS/sytles.css"/>
     </head>
-    <body>
+    <body id="body">
         <div class="header">
             <h1 id="headerH1"> CRYPTO CIPHER </h1>
             <p id="headerP"> Simple Ciphers, Strong Security. </p>
         </div>        
         <div class="introduction">
             <div class="introText">
-                <h1>Welcome to Crypto Cipher</h1>
-                <p>Explore cutting-edge encryption tools and techniques
+                <h1 id="introH1">Welcome to Crypto Cipher</h1>
+                <p id="introP">Explore cutting-edge encryption tools and techniques
                     for secure communication and cryptographic learning.</p>
             </div>
-            <button> TRY OUR TOOLS </button>
+            <a href="#target"><button id="tryToolsBtn"> TRY OUR TOOLS </button></a>
         </div>
-        <div class="tools">
+        <div class="tools" id="target">
 
             <div class="machine">
-                <h3 class="title">Vernam Encryption</h3>
+                <h3 class="titleMachine">Vernam Encryption</h3>
                 <div class="components">
                     <p>INPUT:</p>
-                    <input class="inputCase"/>
+                    <textarea class="inputCase iVE"></textarea>
                     <p>KEY:</p>
-                    <input class="keyCase"/>
-                    <button>ENCRYPT</button>
+                    <textarea class="keyCase kVE"></textarea>
+                    <button class="machineBtn encryptV">ENCRYPT</button>
                     <p>OUTPUT:</p>
-                    <input class="outputCase"/>
+                    <textarea class="outputCase oVE" readonly="true"></textarea>
                 </div>
             </div>
 
 
             <div class="machine">
-                <h3 class="title">Vernam Decryption</h3>
+                <h3 class="titleMachine">Vernam Decryption</h3>
                 <div class="components">
                     <p>INPUT:</p>
-                    <input class="inputCase"/>
+                    <textarea class="inputCase iVD"></textarea>
                     <p>KEY:</p>
-                    <input class="keyCase"/>
-                    <button>DECRYPT</button>
+                    <textarea class="keyCase kVD"></textarea>
+                    <button class="machineBtn decryptV">DECRYPT</button>
                     <p>OUTPUT:</p>
-                    <input class="outputCase"/>
+                    <textarea class="outputCase oVD" readonly="true"></textarea>
                 </div>
             </div>
 
 
             <div class="machine">
-                <h3 class="title">Caesar Encryption</h3>
+                <h3 class="titleMachine">Caesar Encryption</h3>
                 <div class="components">
                     <p>INPUT:</p>
-                    <input class="inputCase"/>
+                    <textarea class="inputCase iCE"></textarea>
                     <p>SHIFT:</p>
-                    <input class="keyCase"/>
-                    <button>ENCRYPT</button>
+                    <textarea class="keyCase kCE"></textarea>
+                    <button class="machineBtn encryptC">ENCRYPT</button>
                     <p>OUTPUT:</p>
-                    <input class="outputCase"/>
+                    <textarea class="outputCase oCE" readonly="true"></textarea>
                 </div>
             </div>
 
 
             <div class="machine">
-                <h3 class="title">Caesar Decryption</h3>
+                <h3 class="titleMachine">Caesar Decryption</h3>
                 <div class="components">
                     <p>INPUT:</p>
-                    <input class="inputCase"/>
+                    <textarea class="inputCase iCD"></textarea>
                     <p>SHIFT:</p>
-                    <input class="keyCase"/>
-                    <button>DECRYPT</button>
+                    <textarea class="keyCase kCD"></textarea>
+                    <button class="machineBtn decryptC">DECRYPT</button>
                     <p>OUTPUT:</p>
-                    <input class="outputCase"/>
+                    <textarea class="outputCase oCD" readonly="true" value="4fwf"></textarea>
                 </div>
             </div>
 
@@ -81,19 +81,23 @@
         
         <div class="blog">
             <div class="blogText">
-                <h1>Learn about how Caesar and Vernam Works:</h1>
-                <p>The Caesar Cipher shifts each letter of the message 
+                <h1 id="blogH1">Learn about how Caesar and Vernam Works:</h1>
+                <p id="blogP">The Caesar Cipher shifts each letter of the message 
                     by a set number, making it simple but easy to crack. 
                     The Vernam Cipher, however, uses a random key for 
                     each letter, offering much stronger encryption. 
                     Curious to see how they work?</p>
             </div>
-            <button> LEARN MORE </button>
+            <a href="https://medium.com/@jack46055/vernam-and-caesar-ciphers-a-detailed-exploration-of-classic-encryption-techniques-9172ee85a146">
+                <button id="learnMoreBtn"> LEARN MORE </button>
+            </a>
         </div>
 
         <div class="footer">
             <div class="footerTitle">
-                <h1>CRYPTO CIPHER</h1>
+                <a href="#body">
+                    <h1>CRYPTO CIPHER</h1>
+                </a>
             </div>
             <div class="contactInformation">
                 <h1>contact@cyprtocipher.com</h1>
@@ -101,4 +105,5 @@
             </div>
         </div>
     </body>
+    <script src="../JAVASCRIPT/script.js"></script>
 </html>
